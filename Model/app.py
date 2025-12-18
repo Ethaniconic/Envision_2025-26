@@ -81,9 +81,9 @@ if st.button("🔍 Analyze Product", use_container_width=True):
             st.progress(min(int(prob * 100), 100))
 
             if prediction:
-                st.error(f"⚠️ Grey Market Detected\n\nConfidence Score: {prob:.2f}")
+                st.error(f"⚠️ Grey Market Detected\n\nConfidence Score: {round(prob*100)}%")
             else:
-                st.success(f"✅ Legitimate Product\n\nConfidence Score: {(1 - prob):.2f}")
+                st.success(f"✅ Legitimate Product\n\nConfidence Score: {round((1 - prob)*100)}%")
 
             st.caption(f"Model used: {model_choice}")
         except Exception as e:
