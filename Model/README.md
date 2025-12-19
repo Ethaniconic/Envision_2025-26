@@ -1,5 +1,7 @@
 # 🕵️ Grey Market Detection Model
 
+[Grey Market MVP](https://grey-market.streamlit.app/)
+
 ## Overview
 
 This module contains machine learning models trained to detect counterfeit and grey market products from e-commerce platforms (specifically Snapdeal) using pricing patterns and product title analysis. The project includes model training, evaluation, and a web-based interactive Streamlit application for real-time predictions.
